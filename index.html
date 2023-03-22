@@ -1,0 +1,64 @@
+<head>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/main-page.css">
+  <title>Home</title>
+</head>
+<body>
+<div class="nav-bar">
+  <a href="index.html"> Home</a>
+  <a id="file-management-button" href="file-management.html"> File Management</a>
+  <a href="help.html"> Help</a>
+</div>
+
+<div class="main-content">
+  <h1>Easter Bakset Builder</h1>
+  <div class="buttons-grid">
+    <div class="buttons-area">
+      <button id="new-button">New</button>
+      <button id="confirm-button">Confirm</button>
+      <button id="blue-egg-button">Blue Egg</button>
+      <button id="striped-egg-button">Striped Egg</button>
+      <button id="bunny-button">Bunny</button>
+      <button id="white-basket-button">White Basket</button>
+      <button id="brown-basket-button">Brown Basket</button>
+      <button id="base-button">Base</button>
+      <button id="all-eggs-button">All Eggs</button>
+      <button id="mixed-button">Mixed</button>
+      <button id="remove-button">Remove</button>
+      <button id="save-button">Save</button>
+    </div>
+    <div class="undo-buttons">
+      <button id="undo-button">Undo</button>
+      <button id="redo-button">Redo</button>
+    </div>
+  </div>
+  <div class="basket-wrapper">
+    <div class="egg-grid" id="egg-grid">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+      <img src="">
+    </div>
+    <div class="basket" id="basket">
+      <img src="Images/brown_basket.png">
+    </div>
+  </div>
+</div>
+<form id="serverForm" method="POST" action="php/save-file.php">
+  <input type="hidden" id="saveFile" name="saveFile" value="">
+</form>
+</body>
+
+<script src= "js/caretaker.js"></script>
+<script src= "js/memento.js"></script>
+<script src= "js/easter-basket.js"></script>
+<script src="js/main-page.js"></script>
+

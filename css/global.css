@@ -1,0 +1,61 @@
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hotpink;
+  font-family: "Papyrus", serif;
+  font-weight: 700;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  color: gold;
+  outline: blue solid 10px;
+  width: auto;
+}
+
+.main-content {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  height: 88.7vh;
+  width: 99.4vw;
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  overflow: hidden;
+}
+
+button {
+  background-color: orange;
+  border-width: 3px;
+  border-color: lightpink;
+  border-style: solid;
+  padding: 4px 15px 4px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: Impact;
+  box-shadow: 0px 0px 20px 5px #FFFFFF;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  height: 50px;
+  width: 200px;
+  outline-color: yellow;
+  outline-width: 5px;
+  box-shadow: 0 0 80px 60px #FEEA3D;
+}
