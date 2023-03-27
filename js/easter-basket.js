@@ -102,7 +102,6 @@ class EasterBasket {
     } else if (this.basket.children[0].src.includes(this.greenBasketString)) {
       currentBasket.push(4);
     }
-
     // return completed basket
     return currentBasket;
   }
@@ -126,7 +125,6 @@ class EasterBasket {
   /* Description: removes the most recently placed egg in the basket
    */
   removeLastEgg() {
-
     // get index of last egg
     const index = 6 * this.currentRow + this.currentCol;
 

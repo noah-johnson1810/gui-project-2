@@ -16,11 +16,18 @@
   <a href="./file-management.html"> File Management</a>
   <a href="./help.html"> Help</a>
 </div>
+<h1> Help Page </h1>
 <div class="help-page-content-wrapper">
-  <h2>Name and Submission Checklist</h2>
+  <h2 id="content">On This Page</h2>
+  <a href="#checklist">Name And Submission Checklist</a><br/>
+  <a href="#css">CSS</a><br/>
+  <a href="#how-to-use">How To Use This Application</a><br/>
+  <a href="#extensions">Extensions</a><br/>
+
+  <h2 id="checklist">Name and Submission Checklist</h2>
   <p> Name: Noah Johnson </p>
   <p> Submission Checklist: </p>
-  <p> ___ *Grading tags completed <br/>
+  <p> X *Grading tags completed <br/>
 
     Undo/redo pattern (tier-less)<br/>
     X a. Undo/redo OOP followed<br/>
@@ -29,7 +36,7 @@
     X d. Able to do at least 5 undo/redo for change<br/>
     X f. Able to do at least 5 undo/redo for 1 preconfigured change<br/>
 
-    1.	Tier: Basic content<br/>
+    1. Tier: Basic content<br/>
     X a. All 3 pages present<br/>
     X b. Header in all pages in correct spot<br/>
     X c. Nav bar in all pages in correct spot<br/>
@@ -68,11 +75,16 @@
     X f. Loading properly displays with app generated file<br/>
     X g. Able to save, download, upload, and load that same file<br/>
 
-      4 Tier: Extensions	30<br/>
-      Extension 1: <!--<number> <points> <name>: <how to test/find if applicable>--><br/>
-      Extension 2: <!--<number> <points> <name>: <how to test/find if applicable>--><br/>
-        Etc. </p>
-  <h2>CSS</h2>
+    4 Tier: Extensions 30<br/>
+    Extension 1: 1a + 5pts<br/>
+    Extension 2: 1b + 5 pts<br/>
+    Extension 3: 2b + 5 pts<br/>
+    Extension 4: 3a + 5 pts<br/>
+    Extensions Total = 20 / 30 extensions points <br/>
+    <a href="#extensions">See the extensions section</a> for more detailed extensions information.
+    </p>
+  <br/><a href="#content">Back To Top</a>
+  <h2 id="css">CSS</h2>
   <p>
     I didn't use any sort of CSS framework, library, or template so everything is my custom rules. <br/>
     1. Clearly the backgrounds are not white<br/>
@@ -81,24 +93,40 @@
     4. My navigation bar uses 3 anchor tags with custom links<br/>
     5. The main application has a red border<br/>
     6. The help page headings clearly have a font style change<br/>
-    7. Also by looking around the page it's pretty clear that I changed a lot of CSS, it may be ugly but it is custom, as per the requirements.<br/>
+    7. Also by looking around the page it's pretty clear that I changed a lot of CSS, it may be ugly but it is custom,
+    as per the requirements.<br/>
   </p>
-  <h2>How to use the application</h2>
+  <br/><a href="#content">Back To Top</a>
+
+  <h2 id="how-to-use">How to use the application</h2>
   <p>
+    <b>Bug Report</b><br/>
+    The only slight bug is if you're zooming through the application, you need to wait just a second (literally, like 1
+    second) after clicking upload file before you try to open it. Sometimes while trying to debug I was clicking open
+    instantly before it had uploaded the new file content. If it doesn't seem to be updating, just make sure you wait
+    about 1 second in between clicking upload and clicking open. <br/>
     <b>Creating Baskets</b> <br/>
-    This is done very simply using the left menu buttons to add, create, remove, confirm goodies. There are also preconfigured options.<br/>
+    This is done very simply using the left menu buttons to add, create, remove, confirm goodies. There are also
+    preconfigured options.<br/>
     <b>Undo/Redo</b><br/>
-    The application allows virtually unlimited undo/redo while you're on the creation page, but is not saved after you leave the page (for example, to go to the file management page).<br/>
+    The application allows virtually unlimited undo/redo while you're on the creation page, but is not saved after you
+    leave the page (for example, to go to the file management page).<br/>
     <b>Save Format</b><br/>
-    The baskets are saved as arrays of 13 integers. 1-12 are the goodies (0=nothing, 1=white egg, 2=blue egg, 3=striped egg, 4=chocolate bunny). The 13th integer is the basket color (0=brown, 1=white). These are stored in simple plain text files as strings (for example, [2,3,2,3,2,3,4,4,4,3,0,0,1]).<br/>
+    The baskets are saved as arrays of 13 integers. 1-12 are the goodies (0=nothing, 1=white egg, 2=blue egg, 3=striped
+    egg, 4=chocolate bunny). The 13th integer is the basket color (0=brown, 1=white, 2=blue, 3=red, 4=green). These are
+    stored in simple plain text files as strings (for example, [2,3,2,3,2,3,4,4,4,3,0,0,1]).<br/>
   </p>
-  <h2>Extensions</h2>
+  <br/><a href="#content">Back To Top</a>
+
+  <h2 id="extensions">Extensions</h2>
   <p>
     <b>5 pts: 1a. Style using a CSS feature not discussed in class </b> <br/>
-    I made the buttons tilt when hovered over using an animation. I learned a lot about CSS animations in my internship last summer which is how I knew how to do this. <br/>
+    I made the buttons tilt when hovered over using an animation. I learned a lot about CSS animations in my internship
+    last summer which is how I knew how to do this. <br/>
 
     <b> 5pts: 1b. Make a fancy page background </b> <br/>
-    I created a color-changing page background by making a large static gradient and using animations to move the image back and forth,
+    I created a color-changing page background by making a large static gradient and using animations to move the image
+    back and forth,
     making the color change. <br/>
 
     <b> 5pts: 2b. Delete row </b><br/>
@@ -106,8 +134,9 @@
 
     <b> 5pts: 3a. Make 3 more baskets or goodies available </b><br/>
     Added red, green, and blue baskets, selectable under the "change basket" button <br/>
-
+    <b> Extensions Total: 20pts</b><br/>
   </p>
+  <br/><a href="#content">Back To Top</a>
 
 </div>
 </body>

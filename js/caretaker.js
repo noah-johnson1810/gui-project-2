@@ -30,7 +30,6 @@ class Caretaker { // GRADING: MANAGE
    */
   saveBasket(basket) {
     this.baskets.push(new EasterBasketMemento(basket));
-    console.log("Just saved basket, the new array is " + this.baskets);
     this.currentBasket = this.baskets.length - 1;
   }
 

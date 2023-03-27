@@ -50,7 +50,7 @@ function loadFile() {
   // create ne xhttp object
   let xhttp = new XMLHttpRequest();
 
-  // set the available basket to be what was in the server file
+  // set the available basket to be what is in the server file
   xhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
       setAvailableBasket(filename, stringToIntArray(this.responseText));
@@ -82,6 +82,7 @@ function stringToIntArray(str) {
  * Parameters: arrayToSave - the array to be added to PHP cookies
  */
 function setCookiePHP(arrayToSave) {
+
   // create new xhttp request object
   let xhttp = new XMLHttpRequest();
 
@@ -104,6 +105,5 @@ function writeBasketToServer() {
   // set basket array to the available basket
   let basketArray = availableBasket.arr;
   form.elements["saveFile"].value = JSON.stringify(basketArray);
-  console.log("Writing this basket: " + form.elements["saveFile"].value);
   form.submit();
 }
