@@ -1,3 +1,7 @@
+// Author: Noah Johnson
+// Class: CSC 468
+// Description: PHP file to save a PHP cookie with name and value passed in as parameters
+
 <?php
 if (isset($_POST["cookieName"]) && isset($_POST["cookieValue"])) {
   // Get the name and value of the cookie from the POST parameters

@@ -1,25 +1,46 @@
-class Caretaker {
+/* Author: Noah Johnson
+ * Class: CSC 468
+ * Description: Caretaker class for Undo/Redo
+ */
+
+class Caretaker { // GRADING: MANAGE
+
+  /* Description: Constructor for caretaker, initializes baskets array to the starting empty brown basket
+   */
   constructor() {
-    this.baskets = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+    const startingBasket = new EasterBasketMemento([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+    this.baskets = [startingBasket];
     this.currentBasket = 0;
   }
 
-  saveBasket(basket) {
-    this.baskets.push(basket);
-    this.currentBasket = this.baskets.length - 1;
-  }
-
-  undo() {
-    if (this.currentBasket >= 0) {
-      this.currentBasket--;
-      return this.baskets[this.currentBasket];
+  /* Description: Performs a redo by incrementing the index of the "current" basket in the history array
+   * Returns: the new current basket
+   */
+  redo() {
+    // check to make sure there are baskets in the history
+    if (this.currentBasket < this.baskets.length - 1) {
+      // increment current basket
+      this.currentBasket++;
+      return this.baskets[this.currentBasket].getBasket();
     }
   }
 
-  redo() {
-    if(this.currentBasket < this.baskets.length - 1) {
-      this.currentBasket++;
-      return this.baskets[this.currentBasket];
+  /* Description: adds a basket to the caretaker's history array
+   * Parameters: basket - the basket to save
+   */
+  saveBasket(basket) {
+    this.baskets.push(new EasterBasketMemento(basket));
+    console.log("Just saved basket, the new array is " + this.baskets);
+    this.currentBasket = this.baskets.length - 1;
+  }
+
+  /* Description: Performs an undo by decrementing the index of the "current" basket in the history array
+   * Returns: the new current basket
+   */
+  undo() {
+    if (this.currentBasket >= 0) {
+      this.currentBasket--;
+      return this.baskets[this.currentBasket].getBasket();
     }
   }
 }

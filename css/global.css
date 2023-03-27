@@ -1,3 +1,8 @@
+/* Author: Noah Johnson
+ * Class: CSC 468
+ * Description: CSS rules global to this application
+ */
+
 .nav-bar {
   position: absolute;
   top: 0;
@@ -49,6 +54,7 @@ button {
   border-radius: 10px;
   font-family: Impact;
   box-shadow: 0px 0px 20px 5px #FFFFFF;
+  transition: transform 0.1s ease;
 }
 
 button:hover {
@@ -58,4 +64,5 @@ button:hover {
   outline-color: yellow;
   outline-width: 5px;
   box-shadow: 0 0 80px 60px #FEEA3D;
+  transform: rotate(5deg);
 }

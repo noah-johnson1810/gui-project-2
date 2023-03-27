@@ -1,3 +1,8 @@
+/* Author: Noah Johnson
+ * Class: CSC 468
+ * Description: CSS rules for the file management page
+ */
+
 .file-buttons-container {
   height: 20vh;
   display: flex;

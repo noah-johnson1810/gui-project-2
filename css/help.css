@@ -1,0 +1,12 @@
+/* Author: Noah Johnson
+ * Class: CSC 468
+ * Description: CSS rules for the help page
+ */
+
+.help-page-content-wrapper {
+  display: block;
+  position: relative;
+  top: 10vh;
+  background-color: lightseagreen;
+  outline: 25px solid mediumpurple;
+}

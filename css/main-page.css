@@ -1,3 +1,8 @@
+/* Author: Noah Johnson
+ * Class: CSC 468
+ * Description: CSS rules for the main (index) page
+ */
+
 .buttons-grid {
   display: grid;
   grid-template-columns: 70vw 29vw;
@@ -13,6 +18,7 @@
 
 .buttons-area {
   background-color: rebeccapurple;
+  flex-wrap: wrap;
 }
 
 .undo-buttons {
@@ -53,13 +59,63 @@
   max-width: 100%;
 }
 
-
-
 body {
   overflow: hidden;
-  background-color: deeppink;
+  background-image: linear-gradient(to right, hotpink, mediumpurple);
 }
 
 button#confirm-button {
   background-color: springgreen;
+}
+
+body {
+  background: linear-gradient(to right, #0000ff, #00ffff, #00ff00, #ffff00, #ff0000);
+  background-size: 1000% 1000%; /* set the background size to be 10 times the viewport size */
+  animation: gradient 20s ease infinite; /* animate the background for 20 seconds with ease animation */
+}
+
+h1 {
+  position: absolute; /* set the position of the h1 element to absolute */
+  left: 0; /* set the left position of the h1 element to the left edge of the container */
+  bottom: -15px;
+  transform: translateX(0); /* set the initial translation of the h1 element to 0 */
+  animation: move 10s linear infinite; /* animate the movement of the h1 element for 4 seconds with a linear animation */
+  color: black;
+  outline: none;
+}
+
+.h1-container {
+  position: relative; /* set the position of the container to relative */
+  width: 98.8vw; /* set the width of the container */
+  height: 11vh; /* set the height of the container */
+  border: 5px solid blue; /* set a border for the container */
+  overflow: hidden; /* hide any content that overflows the container */
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(35vw); /* set the initial translation of the h1 element to 0 */
+  }
+  25% {
+    transform: translateX(67vw); /* move the h1 element to the right edge of the container */
+  }
+  50% {
+    transform: translateX(35vw);
+  }
+  75% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(35vw); /* move the h1 element to the left edge of the container */
+  }
 }

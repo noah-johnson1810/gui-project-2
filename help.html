@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+
+<!-- Author: Noah Johnson-->
+<!-- Class: CSC 468 -->
+<!-- Description: Help page containing site information and the checklist -->
+
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/main-page.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/help.css">
   <title>Home</title>
 </head>
 <body>
@@ -10,6 +16,99 @@
   <a href="./file-management.html"> File Management</a>
   <a href="./help.html"> Help</a>
 </div>
+<div class="help-page-content-wrapper">
+  <h2>Name and Submission Checklist</h2>
+  <p> Name: Noah Johnson </p>
+  <p> Submission Checklist: </p>
+  <p> ___ *Grading tags completed <br/>
 
+    Undo/redo pattern (tier-less)<br/>
+    X a. Undo/redo OOP followed<br/>
+    X b. Able to do at least 1 undo/redo for change<br/>
+    X c. Able to do at least 1 undo/redo for 1 preconfigured change<br/>
+    X d. Able to do at least 5 undo/redo for change<br/>
+    X f. Able to do at least 5 undo/redo for 1 preconfigured change<br/>
+
+    1.	Tier: Basic content<br/>
+    X a. All 3 pages present<br/>
+    X b. Header in all pages in correct spot<br/>
+    X c. Nav bar in all pages in correct spot<br/>
+    X d. All interaction buttons added to main page in correct spot<br/>
+    X e. Properly display the default content in main page in correct spot<br/>
+    X f. At minimum, a place holder for file upload/load/download in file page in correct spot<br/>
+    X h. All headings added to Help page in correct order<br/>
+    X i. Help page content filled in<br/>
+    X j. Within page link help page working<br/>
+
+    2a. Basic application tasks<br/>
+    X a. Able to change/confirm goody<br/>
+    X b. Able to change basket only<br/>
+    X c. New row still work<br/>
+    X d. Able to delete goodies properly<br/>
+
+    2b. CSS rules<br/>
+    X a. Background color/image<br/>
+    X b. CSS header<br/>
+    X c. CSS nav bar color/image<br/>
+    X d. CSS a rule<br/>
+    X f. Content border<br/>
+    X g. Help heading font change<br/>
+
+
+    3a More advanced main page options<br/>
+    X a. Able to change to preconfigured options<br/>
+    X b. Main content area unaffected by save, and stays on page<br/>
+
+    3b Tier: Files<br/>
+    X a. Able to save the current content (must show in file page)<br/>
+    X b. Able to download at least one file (default is ok)<br/>
+    X c. Able to download an application generated file<br/>
+    X d. Able to upload a file<br/>
+    X e. Loading a file redirects back to the main page<br/>
+    X f. Loading properly displays with app generated file<br/>
+    X g. Able to save, download, upload, and load that same file<br/>
+
+      4 Tier: Extensions	30<br/>
+      Extension 1: <!--<number> <points> <name>: <how to test/find if applicable>--><br/>
+      Extension 2: <!--<number> <points> <name>: <how to test/find if applicable>--><br/>
+        Etc. </p>
+  <h2>CSS</h2>
+  <p>
+    I didn't use any sort of CSS framework, library, or template so everything is my custom rules. <br/>
+    1. Clearly the backgrounds are not white<br/>
+    2. My h1's and h2's are custom headers<br/>
+    3. My navigation bar has custom colors<br/>
+    4. My navigation bar uses 3 anchor tags with custom links<br/>
+    5. The main application has a red border<br/>
+    6. The help page headings clearly have a font style change<br/>
+    7. Also by looking around the page it's pretty clear that I changed a lot of CSS, it may be ugly but it is custom, as per the requirements.<br/>
+  </p>
+  <h2>How to use the application</h2>
+  <p>
+    <b>Creating Baskets</b> <br/>
+    This is done very simply using the left menu buttons to add, create, remove, confirm goodies. There are also preconfigured options.<br/>
+    <b>Undo/Redo</b><br/>
+    The application allows virtually unlimited undo/redo while you're on the creation page, but is not saved after you leave the page (for example, to go to the file management page).<br/>
+    <b>Save Format</b><br/>
+    The baskets are saved as arrays of 13 integers. 1-12 are the goodies (0=nothing, 1=white egg, 2=blue egg, 3=striped egg, 4=chocolate bunny). The 13th integer is the basket color (0=brown, 1=white). These are stored in simple plain text files as strings (for example, [2,3,2,3,2,3,4,4,4,3,0,0,1]).<br/>
+  </p>
+  <h2>Extensions</h2>
+  <p>
+    <b>5 pts: 1a. Style using a CSS feature not discussed in class </b> <br/>
+    I made the buttons tilt when hovered over using an animation. I learned a lot about CSS animations in my internship last summer which is how I knew how to do this. <br/>
+
+    <b> 5pts: 1b. Make a fancy page background </b> <br/>
+    I created a color-changing page background by making a large static gradient and using animations to move the image back and forth,
+    making the color change. <br/>
+
+    <b> 5pts: 2b. Delete row </b><br/>
+    Added a button which removes the current row<br/>
+
+    <b> 5pts: 3a. Make 3 more baskets or goodies available </b><br/>
+    Added red, green, and blue baskets, selectable under the "change basket" button <br/>
+
+  </p>
+
+</div>
 </body>
 </html>
